@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/* メニュー全体のスタイル */
+ul.ddmenu {
+    margin: 0px;
+    padding: 0px 0px 0px 15px;
+    background-color: #FF6699;
+    border-radius: 10px; /* メニューの角を丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* メニューに影を追加 */
+    position: relative; /* メニュー自体を基準にする */
+}
+
+/* メニュー項目のスタイル */
+ul.ddmenu li {
+    width: 200px;
+    display: inline-block;
+    list-style-type: none;
+    position: relative;
+    margin: 5px; /* 項目間の隙間を追加 */
+    border-radius: 5px; /* メニュー項目の角を丸くする */
+}
+
+/* メニュー項目のリンクスタイル */
+ul.ddmenu a {
+    background-color: #FF773E;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    border-radius: 5px; /* 項目の角を丸くする */
+    padding: 10px 0; /* 内側の余白を追加 */
+    transition: background-color 0.3s, transform 0.3s; /* ホバー時のトランジション効果 */
+}
+
+/* メニュー項目のホバー時 */
+ul.ddmenu a:hover {
+    background-color: #ffdddd;
+    color: #dd0000;
+    transform: scale(1.1); /* ホバー時に少し拡大する */
+}
+
+/* サブメニューのスタイル */
+ul.ddmenu ul {
+    display: none;
+    margin: 0px;
+    padding: 0px;
+    position: absolute;
+    left: 0; /* サブメニューを親メニュー項目の下に表示 */
+    top: 100%; /* 親メニューの下に表示するための設定 */
+    border-radius: 5px; /* サブメニューの角を丸くする */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* サブメニューに影を追加 */
+    background-color: #FF6699;
+    z-index: 1000; /* サブメニューが他の要素に隠れないようにする */
+}
+
+/* メニュー項目にマウスが乗ったとき、サブメニューを表示 */
+ul.ddmenu li:hover ul {
+    display: block;
+}
+
+/* サブメニュー項目のスタイル */
+ul.ddmenu ul li {
+    width: 180px; /* サブメニュー項目の横幅 */
+    margin: 0; /* サブメニュー項目間の隙間を削除 */
+}
+
+/* サブメニュー項目のリンクスタイル */
+ul.ddmenu ul a {
+    background-color: #FF6699;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: normal;
+    border-radius: 5px; /* サブメニュー項目の角を丸くする */
+}
+
+/* サブメニュー項目のホバー時 */
+ul.ddmenu ul a:hover {
+    background-color: #ffdddd;
+    color: #dd0000;
+}

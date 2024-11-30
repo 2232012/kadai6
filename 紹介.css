@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/* #one セクション */
+#one {
+  text-align: center;
+  border: thick solid #80E6C5;
+  border-radius: 15px; /* 角を丸くする */
+  padding: 30px; /* 内側の余白を追加 */
+  background-color: #F0F8FF; /* 背景色を淡い青に設定 */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* 影を加えて立体感を追加 */
+  margin: 20px auto; /* 上下の余白を調整 */
+  max-width: 800px; /* 幅を制限 */
+}
+
+/* 画像のスタイル */
+#one img {
+  border-radius: 10px; /* 画像の角を丸く */
+  max-width: 100%; /* 画像の最大幅を親要素に合わせる */
+  height: auto; /* 画像の高さを自動調整 */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 画像に影を追加 */
+  transition: transform 0.3s ease-in-out; /* ホバー時に拡大する効果 */
+}
+
+/* 画像ホバー効果 */
+#one img:hover {
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+/* テキストのスタイル */
+#one p {
+  font-size: 18px; /* フォントサイズを調整 */
+  line-height: 1.6; /* 行間を調整 */
+  margin-top: 15px; /* 上の余白を調整 */
+  color: #333; /* テキスト色を濃いグレーに設定 */
+  font-family: 'Arial', sans-serif; /* フォントファミリーを指定 */
+}
+
+/* リンクのスタイル */
+#one a {
+  text-decoration: none; /* リンクの下線を消す */
+  color: #80E6C5; /* リンクの色を変更 */
+  font-weight: bold; /* リンクを太字に */
+  padding: 5px 10px; /* リンク周りに余白を追加 */
+  border-radius: 5px; /* リンクの角を丸く */
+  transition: background-color 0.3s, color 0.3s; /* ホバー時の効果 */
+}
+
+#one a:hover {
+  background-color: #80E6C5; /* ホバー時の背景色 */
+  color: white; /* ホバー時の文字色を白に */
+}

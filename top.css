@@ -1,0 +1,126 @@
+@charset "UTF-8";
+
+/* #one セクション */
+#one {
+  color: #E758DF;
+  background-color: #8BEE81;
+  text-align: center;
+  padding: 50px 0; /* 上下の余白を追加 */
+  border-radius: 10px; /* 角を丸くする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* 影を追加して立体感を持たせる */
+  font-family: 'Poppins', sans-serif; /* フォントを Poppins に設定 */
+}
+
+#one h1 {
+  font-size: 36px; /* 見出しの大きさを調整 */
+  font-weight: 600; /* 太字 */
+}
+
+#one p {
+  font-size: 18px;
+  font-weight: 400; /* 普通の太さ */
+  margin-top: 15px; /* 上の余白を追加 */
+}
+
+/* #two セクション */
+#two {
+  text-align: center;
+  background-color: #F6ABE9;
+  padding: 30px 0; /* 上下の余白を追加 */
+  font-family: 'Poppins', sans-serif;
+}
+
+#two p {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+#two a {
+  text-decoration: none;
+  color: #FF6699; /* リンクの色 */
+  font-weight: 600; /* 太字 */
+  padding: 5px 10px; /* クリックしやすくするための余白 */
+  border-radius: 5px; /* 角を丸くする */
+  transition: background-color 0.3s, color 0.3s; /* ホバー時の効果 */
+}
+
+#two a:hover {
+  background-color: #FF6699; /* ホバー時の背景色 */
+  color: white; /* ホバー時に文字色を白に変更 */
+}
+
+/* ドロップダウンメニューのスタイル */
+ul.ddmenu {
+  margin: 0px;
+  padding: 0px 0px 0px 15px;
+  background-color: #FF6699;
+  list-style-type: none;
+  border-radius: 10px; /* メニューの角を丸くする */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* メニューに影を追加 */
+}
+
+/* メニュー項目のスタイル */
+ul.ddmenu li {
+  width: 200px;
+  display: inline-block;
+  list-style-type: none;
+  position: relative;
+  margin: 5px; /* 項目間の隙間 */
+  border-radius: 5px;
+}
+
+ul.ddmenu a {
+  background-color: #FF773E;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  border-radius: 5px;
+  padding: 10px 0;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+ul.ddmenu a:hover {
+  background-color: #ffdddd;
+  color: #dd0000;
+  transform: scale(1.05); /* ホバー時に少し拡大 */
+}
+
+/* サブメニュー */
+ul.ddmenu ul {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+  position: absolute;
+  left: 0;
+  top: 100%; /* 親メニュー項目の下に表示 */
+  background-color: #FF6699;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul.ddmenu li:hover ul {
+  display: block;
+}
+
+/* サブメニュー項目のスタイル */
+ul.ddmenu ul li {
+  width: 180px;
+  margin: 0;
+}
+
+ul.ddmenu ul a {
+  background-color: #FF6699;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: normal;
+  border-radius: 5px;
+}
+
+ul.ddmenu ul a:hover {
+  background-color: #ffdddd;
+  color: #dd0000;
+}
